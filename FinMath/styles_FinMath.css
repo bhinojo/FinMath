@@ -5,19 +5,31 @@ html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable,
     font-weight: normal;
     font-family: 'IBM Plex Sans', sans-serif;
 }
+header {
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    height: 80px;
+    z-index:100;
+}
 h1 {
     font-size: 5em;
     margin: 0px auto;
     text-align: center;
-    color: rgb(80, 230, 82);
-    background-color: rgb(0,0,0);
-    box-shadow: grey 0px 10px 10px;
+    color: rgb(80, 80, 80);
+    background-color: rgb(255,255,255);
+    box-shadow: black 0px 10px 10px;
     border-radius:0px 0px 200px 200px;
 }
-section{
-    margin:100px 15px;
+body {
+    background-color:rgb(80,80,80);
+}
+section {
+    padding-top: 170px;
 }
 section p{
+    background-color:rgb(255, 255, 255);
     margin-right:20px;
     margin-bottom:30px;
     font-size:1.5em;
@@ -46,7 +58,7 @@ section form input{
 .formYBoton {
     transform: scale(1);
     border: none;
-    box-shadow: grey 5px 5px 15px;
+    box-shadow: black 0px 6px 10px 0px;
     padding: 30px 20px 20px 20px;
     justify-self: auto;
     margin-right: 20px;
@@ -55,7 +67,7 @@ section form input{
 #btnCalcular {
     background-color: white;
     transform: scale(1);
-    box-shadow: grey 5px 5px 15px;
+    box-shadow: black 5px 5px 15px;
     border: none;
     justify-content: center;
     -webkit-transition: -webkit-transform 0.1s ease-in-out 0.05s;
@@ -63,7 +75,7 @@ section form input{
 }
 section p:hover {
     -webkit-transform: scale(1.1);
-    box-shadow: grey 10px 10px 10px;
+    box-shadow: black 0px 6px 10px 0px;
     background-color: rgba(80, 230, 82, .5);
 }
 #btnCalcular:hover {
