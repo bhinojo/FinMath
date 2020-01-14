@@ -1,0 +1,4 @@
+Dia;14/01/2019
+Hora;00:33AM
+Lugar;Playa San Juan, Alicante, España.
+Comentario;Dia 0. Plataforma de calculo financiero. FinMath.

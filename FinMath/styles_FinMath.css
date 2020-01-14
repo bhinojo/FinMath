@@ -1,0 +1,71 @@
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+h1 {
+    font-size: 5em;
+    margin: 0px auto;
+    text-align: center;
+    color: rgb(80, 230, 82);
+    background-color: rgb(0,0,0);
+    box-shadow: grey 0px 10px 10px;
+    border-radius:0px 0px 200px 200px;
+}
+section{
+    margin:100px 15px;
+}
+section p{
+    margin-right:20px;
+    margin-bottom:30px;
+    font-size:1.5em;
+    border:solid;
+    border-radius:10px;
+    padding:1em;
+    -webkit-transition:-webkit-transform 0.15s ease-in-out 0.1s;
+}
+section form{
+    display:inline-flex;
+    border-radius:10px;
+    justify-content:center;  
+}
+section article{
+    display:inline-flex;
+}
+section h3{
+    
+}
+section form input{
+    border-radius:10px;
+    margin:0px;
+    text-align:center;
+    transform:scale(0.8);
+}
+.formYBoton {
+    transform: scale(1);
+    border: none;
+    box-shadow: grey 5px 5px 15px;
+    padding: 30px 20px 20px 20px;
+    justify-self: auto;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+#btnCalcular {
+    background-color: white;
+    transform: scale(1);
+    box-shadow: grey 5px 5px 15px;
+    border: none;
+    justify-content: center;
+    -webkit-transition: -webkit-transform 0.1s ease-in-out 0.05s;
+    padding:5px;
+}
+section p:hover {
+    -webkit-transform: scale(1.1);
+    box-shadow: grey 10px 10px 10px;
+    background-color: rgba(80, 230, 82, .5);
+}
+#btnCalcular:hover {
+    -webkit-transform: scale(1.1);
+}
