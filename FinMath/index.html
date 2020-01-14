@@ -1,6 +1,7 @@
 ﻿<!DOCTYPE html>
 
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <title>FinMath</title>
@@ -8,6 +9,7 @@
     <script type="text/javascript" src="js.js"></script>
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
 
@@ -17,51 +19,140 @@
 
     <section>
 
-        <article>
-            <p>Interes Simple</p>
-            <div class="formYBoton">
+        <button id="btnCalcular" onclick="calcularInteres()">Calcular</button>
 
-                <form name="interesSimple">
+        <div id="divArticlesSenction">
 
-                    <h3>Capital</h3>
-                    <input type="number" id="capital" value="">
-                    <h3>Tasa</h3>
-                    <input type="number" id="tasa" value="">
-                    <h3>Plazo</h3>
-                    <input type="number" id="plazo" value="">
-                    <h3>Capital Final</h3>
-                    <input type="text" id="resultado" name="resultado" value="" />
+            <article>
 
-                </form>
+                <p>Interes <br /> Simple</p>
 
-                <button id="btnCalcular" onclick="calcularSimple()">Calcular</button>
+                <div class="formulario">
 
-            </div>
-        </article>
+                    <form name="interesSimple">
 
-        <article>
+                        <h3>Capital</h3>
 
-            <p>Interes Compuesto</p>
+                        <input type="number" id="capital" value="">
 
-        </article>
+                        <h3>Tasa</h3>
 
-        <article>
+                        <input type="number" id="tasa" value="">
 
-            <p>Interes Frances</p>
+                        <h3>Plazo</h3>
 
-        </article>
+                        <input type="number" id="plazo" value="">
 
-        <article>
+                        <h3>Capital Final</h3>
 
-            <p>Interes Aleman</p>
+                        <input type="text" id="resultado" name="resultado" value="" />
 
-        </article>
+                    </form>
 
-        <article>
+                </div>
 
-            <p>Interes Americano</p>
+            </article>
 
-        </article>
+            <article>
+
+                <p>Interes <br /> Compuesto</p>
+
+                <div class="formulario">
+
+                    <form name="interesCompuesto">
+
+                        <h3>Capital</h3>
+
+                        <input type="number" id="capitalCompuesto" value="">
+
+                        <h3>Tasa</h3>
+
+                        <input type="number" id="tasaCompuesto" value="">
+
+                        <h3>Plazo</h3>
+
+                        <input type="number" id="plazoCompuesto" value="">
+
+                        <h3>Capital Final</h3>
+
+                        <input type="text" id="resultadoCompuesto" name="resultadoCompuesto" value="" />
+
+                    </form>
+
+                </div>
+
+            </article>
+
+            <article>
+
+                <p>Interes <br /> Frances</p>
+
+                <div class="formulario">
+
+                    <form name="interesFrances">
+
+                        <h3>Capital</h3>
+                        <input type="number" id="capital" value="">
+                        <h3>Tasa</h3>
+                        <input type="number" id="tasa" value="">
+                        <h3>Plazo</h3>
+                        <input type="number" id="plazo" value="">
+                        <h3>Capital Final</h3>
+                        <input type="text" id="resultado" name="resultado" value="" />
+
+                    </form>
+
+                </div>
+
+            </article>
+
+            <article>
+
+                <p>Interes <br /> Aleman</p>
+
+                <div class="formulario">
+
+                    <form name="interesAleman">
+
+                        <h3>Capital</h3>
+                        <input type="number" id="capital" value="">
+                        <h3>Tasa</h3>
+                        <input type="number" id="tasa" value="">
+                        <h3>Plazo</h3>
+                        <input type="number" id="plazo" value="">
+                        <h3>Capital Final</h3>
+                        <input type="text" id="resultado" name="resultado" value="" />
+
+                    </form>
+
+                </div>
+
+            </article>
+
+            <article>
+
+                <p>Interes <br /> Americano</p>
+
+                <div class="formulario">
+
+                    <form name="interesAmericano">
+
+                        <h3>Capital</h3>
+                        <input type="number" id="capital" value="">
+                        <h3>Tasa</h3>
+                        <input type="number" id="tasa" value="">
+                        <h3>Plazo</h3>
+                        <input type="number" id="plazo" value="">
+                        <h3>Capital Final</h3>
+                        <input type="text" id="resultado" name="resultado" value="" />
+
+                    </form>
+
+                </div>
+
+            </article>
+
+        </div>
 
     </section>
 
@@ -70,5 +161,6 @@
         <p>Contacto</p>
 
     </footer>
+
 </body>
 </html>
