@@ -3,19 +3,32 @@
 <html lang="en">
 
 <head>
+
     <meta charset="utf-8" />
+
     <title>FinMath</title>
-    <link href="styles_FinMath.css" rel="stylesheet" />
-    <script type="text/javascript" src="js.js"></script>
+
+
+    <link href="styles_FinMath_General.css" rel="stylesheet" />
+    <link href="styles_FinMath_Intereses.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="js.js"></script>
+
 </head>
 
 <body>
+
     <header>
 
-    <h1>FinMath</h1>
+        <h1>FinMath</h1>
 
     </header>
+
+    <div id="menuNavegacion">
+        <p class="itemNavegacion">Calculo de Intereses</p>
+        <p class="itemNavegacion">Calculo de Cuotas</p>
+    </div>
 
     <section>
 
@@ -23,7 +36,7 @@
 
         <div id="divArticlesSenction">
 
-            <article>
+            <article id="simple">
 
                 <p>Interes <br /> Simple</p>
 
@@ -53,7 +66,7 @@
 
             </article>
 
-            <article>
+            <article id="compuesto">
 
                 <p>Interes <br /> Compuesto</p>
 
@@ -83,75 +96,6 @@
 
             </article>
 
-            <article>
-
-                <p>Interes <br /> Frances</p>
-
-                <div class="formulario">
-
-                    <form name="interesFrances">
-
-                        <h3>Capital</h3>
-                        <input type="number" id="capital" value="">
-                        <h3>Tasa</h3>
-                        <input type="number" id="tasa" value="">
-                        <h3>Plazo</h3>
-                        <input type="number" id="plazo" value="">
-                        <h3>Capital Final</h3>
-                        <input type="text" id="resultado" name="resultado" value="" />
-
-                    </form>
-
-                </div>
-
-            </article>
-
-            <article>
-
-                <p>Interes <br /> Aleman</p>
-
-                <div class="formulario">
-
-                    <form name="interesAleman">
-
-                        <h3>Capital</h3>
-                        <input type="number" id="capital" value="">
-                        <h3>Tasa</h3>
-                        <input type="number" id="tasa" value="">
-                        <h3>Plazo</h3>
-                        <input type="number" id="plazo" value="">
-                        <h3>Capital Final</h3>
-                        <input type="text" id="resultado" name="resultado" value="" />
-
-                    </form>
-
-                </div>
-
-            </article>
-
-            <article>
-
-                <p>Interes <br /> Americano</p>
-
-                <div class="formulario">
-
-                    <form name="interesAmericano">
-
-                        <h3>Capital</h3>
-                        <input type="number" id="capital" value="">
-                        <h3>Tasa</h3>
-                        <input type="number" id="tasa" value="">
-                        <h3>Plazo</h3>
-                        <input type="number" id="plazo" value="">
-                        <h3>Capital Final</h3>
-                        <input type="text" id="resultado" name="resultado" value="" />
-
-                    </form>
-
-                </div>
-
-            </article>
-
         </div>
 
     </section>
@@ -163,4 +107,5 @@
     </footer>
 
 </body>
+
 </html>

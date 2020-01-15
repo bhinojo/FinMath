@@ -1,0 +1,33 @@
+﻿html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+header {
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    height: 80px;
+    z-index: 100;
+}
+h1 {
+    font-size: 5em;
+    margin: auto;
+    text-align: center;
+    color: rgb(39, 144, 34);
+    background-color: rgb(40,40,40);
+    box-shadow: black 0px 10px 10px;
+    text-shadow: black 0px 10px 10px;
+}
+#menuNavegacion{
+    background-color: rgb(40,40,40);
+    margin-top:150px;
+}
+.itemNavegacion {
+    color: rgb(39, 144, 34);
+    display:inline;
+    width: 50%;
+}
