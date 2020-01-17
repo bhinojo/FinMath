@@ -12,6 +12,8 @@ var coeficienteCompuesto = 0;
 
 function calcularInteres() {
 
+    if (document.getElementById('capital').value){
+
             //Tomo variables para interes Simple
 
             capital = document.getElementById('capital').value;
@@ -42,4 +44,24 @@ function calcularInteres() {
 
             document.getElementById('resultadoCompuesto').value = resultadoCompuesto.toFixed(6);
 
-        }
+    } else{
+
+        //Tomo variables para Interes Compuesto
+
+        capitalCompuesto = document.getElementById('capitalCompuesto').value;
+        tasaCompuesto = document.getElementById('tasaCompuesto').value;
+        plazoCompuesto = document.getElementById('plazoCompuesto').value;
+
+        //Calculo Interes Compuesto
+
+        coeficienteCompuesto = Math.pow(Number(1 + ((Number(tasaCompuesto) / 100))), Number(plazoCompuesto));
+
+        resultadoCompuesto = Number(coeficienteCompuesto) * Number(capitalCompuesto);
+
+        //Imprimo Interes Compuesto
+
+        document.getElementById('resultadoCompuesto').value = resultadoCompuesto.toFixed(6);
+
+    }
+
+}
