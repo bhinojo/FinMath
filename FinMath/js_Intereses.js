@@ -20,12 +20,6 @@ function calcularInteres() {
             tasa = document.getElementById('tasa').value;
             plazo = document.getElementById('plazo').value;
 
-            //Tomo variables para Interes Compuesto
-
-            capitalCompuesto = document.getElementById('capitalCompuesto').value;
-            tasaCompuesto = document.getElementById('tasaCompuesto').value;
-            plazoCompuesto = document.getElementById('plazoCompuesto').value;
-
             //Calculo Interes Simple
 
             resultado = Number(capital) + (((Number(tasa) / 100) * Number(capital)) * Number(plazo));
@@ -34,15 +28,24 @@ function calcularInteres() {
 
             document.getElementById('resultado').value = resultado.toFixed(6);
 
-            //Calculo Interes Compuesto
+            if(document.getElementById('capitalCompuesto').value){
 
-            coeficienteCompuesto = Math.pow(Number(1 + ((Number(tasaCompuesto) / 100))), Number(plazoCompuesto));
+                //Tomo variables para Interes Compuesto
 
-            resultadoCompuesto = Number(coeficienteCompuesto) * Number(capitalCompuesto);
+                capitalCompuesto = document.getElementById('capitalCompuesto').value;
+                tasaCompuesto = document.getElementById('tasaCompuesto').value;
+                plazoCompuesto = document.getElementById('plazoCompuesto').value;
 
-            //Imprimo Interes Compuesto
+                //Calculo Interes Compuesto
 
-            document.getElementById('resultadoCompuesto').value = resultadoCompuesto.toFixed(6);
+                coeficienteCompuesto = Math.pow(Number(1 + ((Number(tasaCompuesto) / 100))), Number(plazoCompuesto));
+
+                resultadoCompuesto = Number(coeficienteCompuesto) * Number(capitalCompuesto);
+
+                //Imprimo Interes Compuesto
+
+                document.getElementById('resultadoCompuesto').value = resultadoCompuesto.toFixed(6);
+            }
 
     } else if(document.getElementById('capitalCompuesto').value){
 
@@ -63,7 +66,7 @@ function calcularInteres() {
         document.getElementById('resultadoCompuesto').value = resultadoCompuesto.toFixed(6);
 
     } else{
-        alert("No hay valores");
+        alert("Complete los datos");
     }
 
 }

@@ -35,14 +35,30 @@ nav ul li a{
     font-weight: bold;
     font-size: 1.2em;
     box-shadow: inset  black 0px 0px 0px 0px;
-    transition: 1s ease-in-out;
+    transition: .70s;
 
 }
 #menuNavegacion {
-    margin-top:200px;
+    margin-top:150px;
 }
 nav ul li a:hover{
     background-color: black;
     color: rgb(39, 144, 34);
     box-shadow: inset  black 0px 0px 15px 0px;
+}
+#mostrar li a{
+    display: block;
+}
+#paraHover ul{
+    margin-top: 10px;
+    display: none;
+    transition: 1s;
+    
+}
+#paraHover{
+    transition: 1s;
+}
+#paraHover:hover > ul{
+    display: block;
+    opacity: 1;
 }
