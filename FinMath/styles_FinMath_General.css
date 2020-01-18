@@ -22,12 +22,27 @@ h1 {
     box-shadow: black 0px 10px 10px;
     text-shadow: black 0px 10px 10px;
 }
-#menuNavegacion{
-    background-color: rgb(40,40,40);
-    margin-top:150px;
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
 }
-.itemNavegacion {
+nav ul li a{
+    padding:10px 15px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+    box-shadow: inset  black 0px 0px 0px 0px;
+    transition: 1s ease-in-out;
+
+}
+#menuNavegacion {
+    margin-top:200px;
+}
+nav ul li a:hover{
+    background-color: black;
     color: rgb(39, 144, 34);
-    display:inline;
-    width: 50%;
+    box-shadow: inset  black 0px 0px 15px 0px;
 }

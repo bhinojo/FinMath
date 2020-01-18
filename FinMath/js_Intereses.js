@@ -44,7 +44,7 @@ function calcularInteres() {
 
             document.getElementById('resultadoCompuesto').value = resultadoCompuesto.toFixed(6);
 
-    } else{
+    } else if(document.getElementById('capitalCompuesto').value){
 
         //Tomo variables para Interes Compuesto
 
@@ -62,6 +62,8 @@ function calcularInteres() {
 
         document.getElementById('resultadoCompuesto').value = resultadoCompuesto.toFixed(6);
 
+    } else{
+        alert("No hay valores");
     }
 
 }
