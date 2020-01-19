@@ -1,4 +1,4 @@
-﻿html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+﻿html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fieldset, blockquote {
     padding: 0;
     margin: 0;
     font-size: 100%;
@@ -22,10 +22,13 @@ h1 {
     box-shadow: black 0px 10px 10px;
     text-shadow: black 0px 10px 10px;
 }
+nav{
+    margin:0px 20px
+}
 nav ul{
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: left;
 }
 nav ul li a{
     padding:10px 15px;
@@ -51,14 +54,18 @@ nav ul li a:hover{
 }
 #paraHover ul{
     margin-top: 10px;
-    display: none;
-    transition: 1s;
-    
+    display: block;
+    transition: .5s;
+    position: absolute;
+    opacity: 0;
+}
+#paraHover ul li a{
+    padding: 3px 129px;
+    background-color: lightgrey;
 }
 #paraHover{
     transition: 1s;
 }
 #paraHover:hover > ul{
-    display: block;
     opacity: 1;
 }
